@@ -18,4 +18,36 @@ public class AwsStatsProperties {
 
     @Value("${services/domain}")
     private String serviceDomain;
+
+    public String getAmiId() {
+        return amiId;
+    }
+
+    public void setAmiId(String amiId) {
+        this.amiId = amiId;
+    }
+
+    public String getHostname() {
+        return hostname;
+    }
+
+    public void setHostname(String hostname) {
+        this.hostname = hostname;
+    }
+
+    public String getInstanceType() {
+        return instanceType;
+    }
+
+    public void setInstanceType(String instanceType) {
+        this.instanceType = instanceType;
+    }
+
+    public String getServiceDomain() {
+        return serviceDomain;
+    }
+
+    public void setServiceDomain(String serviceDomain) {
+        this.serviceDomain = serviceDomain;
+    }
 }
