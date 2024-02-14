@@ -13,6 +13,13 @@ public class AwsStatsController {
 
     public AwsStatsController(AwsStatsProperties awsStatsProperties) {
         this.awsStatsProperties = awsStatsProperties;
+        System.out.println("================");
+        System.out.println(awsStatsProperties.getAmiId());
+        System.out.println(awsStatsProperties.getHostname());
+        System.out.println(awsStatsProperties.getServiceDomain());
+        System.out.println(awsStatsProperties.getInstanceType());
+        System.out.println("================");
+        
     }
 
     @GetMapping
